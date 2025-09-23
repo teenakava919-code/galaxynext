@@ -7,9 +7,9 @@
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "getting-started",
+ "icon": "retail",
  "idx": 0,
- "indicator_color": "green",
+ "indicator_color": "",
  "is_hidden": 0,
  "label": "GERP TEST",
  "links": [
@@ -220,7 +220,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-08-30 10:59:21.841800",
+ "modified": "2025-09-03 09:53:31.090443",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "GERP TEST",

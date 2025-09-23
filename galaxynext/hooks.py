@@ -5,6 +5,27 @@ app_description = "text change"
 app_email = "khushim@gmail.com"
 app_license = "mit"
 
+
+
+override_whitelisted_methods = {
+    "galaxynext.api.get_miscellaneous_options": "galaxynext.api.get_miscellaneous_options"
+}
+
+
+# Hook into document events for Item
+doc_events = {
+    "Item": {
+        # Before save → update fields
+        "before_save": "galaxynext.item_hooks.update_item_fields",
+
+        # After save → rename if needed
+        "after_insert": "galaxynext.item_hooks.rename_item_after_save",
+        "on_update": "galaxynext.item_hooks.rename_item_after_save",
+    }
+}
+
+
+
 # ===== Desk Customizations =====
 app_include_css = "/assets/galaxynext/css/galaxyerp.css"
 app_include_js = [
