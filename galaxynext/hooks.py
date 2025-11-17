@@ -16,7 +16,11 @@ app_include_js = [
 ]
 
 
-# અગાઉની imports નીચે add કરો
+override_doctype_class = {
+    "Work Order Operation": "galaxynext.galaxynext.override.work_order_operation_override.WorkOrderOperationOverride"
+}
+
+
 
 # app_include_js = [
 #     "/assets/galaxynext/js/work_order.js"
