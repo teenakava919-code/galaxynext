@@ -11,14 +11,29 @@ override_whitelisted_methods = {
     "galaxynext.api.get_miscellaneous_options": "galaxynext.api.get_miscellaneous_options"
 }
 
-app_include_js = [
-    "/assets/galaxynext/js/workstation_gantt.js"
-]
+
+# override_whitelisted_methods = {
+#     "galaxynext.api.get_item_default_warehouse": "galaxynext.api.get_item_default_warehouse"
+# }
 
 
-override_doctype_class = {
-    "Work Order Operation": "galaxynext.galaxynext.override.work_order_operation_override.WorkOrderOperationOverride"
+# Add this to your hooks.py file
+
+override_whitelisted_methods = {
+    "galaxynext.api.get_item_default_warehouse": "galaxynext.api.get_item_default_warehouse",
+    "galaxynext.api.get_available_subcontracting_orders": "galaxynext.api.get_available_subcontracting_orders",
+    "galaxynext.api.get_allowed_internal_customers": "galaxynext.api.get_allowed_internal_customers"
 }
+
+
+# app_include_js = [
+#     "/assets/galaxynext/js/workstation_gantt.js"
+# ]
+
+
+# override_doctype_class = {
+#     "Work Order Operation": "galaxynext.galaxynext.override.work_order_operation_override.WorkOrderOperationOverride"
+# }
 
 
 
@@ -49,10 +64,10 @@ override_doctype_class = {
 
 # app_include_js = ["/assets/galaxynext/js/work_order_gantt.js"]
 
-override_whitelisted_methods = {
-    "erpnext.manufacturing.doctype.work_order.work_order.get_events": 
-        "galaxynext.overrides.work_order_gantt.get_work_order_gantt_data"
-}
+# override_whitelisted_methods = {
+#     "erpnext.manufacturing.doctype.work_order.work_order.get_events": 
+#         "galaxynext.overrides.work_order_gantt.get_work_order_gantt_data"
+# }
 
 
 # Hook into document events for Item
@@ -74,9 +89,9 @@ app_include_js = [
     "/assets/galaxynext/js/galaxyerp.js",
     "/assets/galaxynext/js/custom_about.js",
     "/assets/galaxynext/js/toolbar/help_dropdown.js"  # ✅ Custom Help Dropdown JS
-      "/assets/galaxynext/js/override_grid.js"  ,  
-    "/assets/galaxynext/js/custom_grid_row.js",
-    "/assets/galaxynext/js/grid_row_override.js"
+    #   "/assets/galaxynext/js/override_grid.js"  ,  
+    # "/assets/galaxynext/js/custom_grid_row.js",
+    # "/assets/galaxynext/js/grid_row_override.js"
         # ✅ Single Grid Override (allow >10 columns)
     # "/assets/galaxynext/js/grid_row_override.js"         # ✅ Grid Row Override (custom validation)
 ]
@@ -189,29 +204,22 @@ fixtures = [
             "project script",
             "customer testing script",
             "supplier testing script",
-            "jab card testing client script",
-	        "work order client script",
             "campaign client script",
             "opportunity client script",
             "lead client script",
             "contract client script",
             "prospect client script",
-             "testing client script",
-            "testing web client script",
-            "test script",
-	    "doctype client script",
-	    "doctype testing client script",
-         "GERP client script",
-       "GERPNext client script",
-           "ERPNext client script"
-
+            "auto fill sale order",
+            "sale order finish instruction"
         ]]]
     },
     {
-        "dt": "Server Script",
-        "filters": [["name", "in", [
-            "job card test server script",
-            "testing server script"
-        ]]]
-    }
+		"dt":"Server Script",
+		"filters":[["name","in",[
+			"notification",
+            "auto create work order",
+            "company event"
+	   ]]]
+	}
+
 ]
