@@ -1,0 +1,336 @@
+/* Calendar Container */
+#calendar {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Event Styling */
+.fc-event {
+    cursor: pointer;
+    border-width: 1px;
+    min-height: 35px;
+    overflow: hidden;
+}
+
+.fc-event:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.fc-event-main {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 6px 4px !important;
+    overflow: hidden !important;
+}
+
+.fc-event-title {
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
+}
+
+/* Main Gantt Container */
+.gantt-main {
+    background: #f9fafb;
+    padding: 10px 0px;
+    margin-bottom: 15px;
+}
+
+/* Legend Container - At Top */
+.gantt-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    margin-bottom: 12px;
+    background: #f9fafb;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.legend-items {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 11px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.legend-item:hover {
+    background: #e5e7eb;
+    transform: translateY(-1px);
+}
+
+.legend-item.legend-selected {
+    background: #dbeafe !important;
+    border: 2px solid #3b82f6;
+    font-weight: 600;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Filter Section - Below Legend */
+.gantt-filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 160px;
+    background: #f9fafb;
+    border-radius: 6px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.filter-group label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #374151;
+    white-space: nowrap;
+    display: contents;
+}
+
+.filter-group input,
+.filter-group select {
+    padding: 2px 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 12px;
+    min-width: 100px;
+    background: white;
+}
+
+.filter-clear-btn {
+    padding: 5px 14px;
+    background: #7c7c7c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-clear-btn:hover {
+    background: #6b7280;
+    transform: translateY(-1px);
+}
+
+.filter-clear-btn.refresh-btn {
+    background: #059669;
+}
+
+.filter-clear-btn.refresh-btn:hover {
+    background: #047857;
+}
+
+.filter-clear-btn svg {
+    flex-shrink: 0;
+}
+
+/* Autocomplete Suggestions */
+.wo-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none;
+    margin-top: 2px;
+}
+
+.wo-suggestions.active {
+    display: block;
+}
+
+.wo-suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.15s ease;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.wo-suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.wo-suggestion-item:hover {
+    background: #f3f4f6;
+}
+
+.wo-suggestion-item[data-wo=""] {
+    cursor: default;
+    color: #999;
+}
+
+/* Hide Today Button */
+button.fc-today-button.fc-button.fc-button-primary {
+    display: none;
+}
+
+/* Custom Tooltip */
+.gantt-custom-tooltip {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #1f2937;
+    min-width: 280px;
+}
+
+.gantt-custom-tooltip .tooltip-header {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e7eb;
+    color: #1f2937;
+}
+
+.gantt-custom-tooltip div {
+    margin-bottom: 6px;
+}
+
+.gantt-custom-tooltip strong {
+    font-weight: 600;
+    color: #4b5563;
+    display: inline-block;
+    min-width: 90px;
+}
+
+.gantt-custom-tooltip hr {
+    border: none;
+    height: 1px;
+    background: #e5e7eb;
+    margin: 10px 0;
+}
+
+/* Tooltip Content Styling */
+.gantt-tooltip-content {
+    padding: 12px;
+    min-width: 280px;
+    background: white;
+    border-radius: 6px;
+}
+
+.tooltip-row {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.tooltip-label {
+    font-weight: 600;
+    color: #4b5563;
+    display: inline-block;
+    min-width: 90px;
+}
+
+.tooltip-divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 10px 0;
+}
+
+/* Bootstrap Tooltip Override */
+.tooltip-inner {
+    background-color: #ffffff;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    max-width: 350px;
+    padding: 0;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    border-top-color: #d1d5db;
+}
+
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: #d1d5db;
+}
+
+/* Workstation Labels */
+span.fc-datagrid-cell-main {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .gantt-legend {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    
+    .gantt-filters {
+        flex-wrap: wrap;
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #calendar {
+        height: 70vh;
+        padding: 10px;
+    }
+    
+    .legend-items {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    
+    .filter-group input,
+    .filter-group select {
+        min-width: 140px;
+    }
+    
+    .gantt-custom-tooltip {
+        min-width: 240px;
+    }
+}

@@ -3,8 +3,8 @@
  "creation": "2025-11-13 12:11:37.179618",
  "docstatus": 0,
  "doctype": "Page",
- "idx": 0,
- "modified": "2025-11-13 12:11:37.179618",
+ "idx": 1,
+ "modified": "2025-11-27 11:10:45.848069",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "workstation-gantt",
@@ -13,9 +13,6 @@
  "roles": [
   {
    "role": "Administrator"
-  },
-  {
-   "role": "Manufacturing Manager"
   },
   {
    "role": "System Manager"
