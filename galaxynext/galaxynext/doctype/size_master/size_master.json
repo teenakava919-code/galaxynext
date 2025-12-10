@@ -1,0 +1,297 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-05 11:42:42.051394",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "size_name",
+  "column_break_qltr",
+  "status",
+  "section_break_tvyp",
+  "select_vnkq",
+  "column_break_tkzg",
+  "type",
+  "section_break_ajpa",
+  "column_break_qhrm",
+  "size_ft",
+  "column_break_alvd",
+  "data_wjhu",
+  "column_break_eodf",
+  "data_vwhu",
+  "column_break_jwtx",
+  "data_lsyj",
+  "column_break_hnzv",
+  "data_dahu",
+  "column_break_tchq",
+  "section_break_dscv",
+  "size_in_ft",
+  "size_cm",
+  "size_in_cm",
+  "size_in_mm",
+  "column_break_jisi",
+  "area_yrd",
+  "html_gnad",
+  "column_break_hkyw",
+  "float_tchx",
+  "float_ppne",
+  "area_in_sm",
+  "column_break_jftw",
+  "column_break_cvod",
+  "column_break_xzln",
+  "khap_detail_section",
+  "length",
+  "size_in_ft_dec",
+  "finishing_ft",
+  "finishing_cm",
+  "column_break_zrto",
+  "width",
+  "column_break_ixph",
+  "column_break_jiia"
+ ],
+ "fields": [
+  {
+   "fieldname": "size_name",
+   "fieldtype": "Data",
+   "label": "Size Name"
+  },
+  {
+   "fieldname": "column_break_qltr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "True\nFalse"
+  },
+  {
+   "fieldname": "section_break_tvyp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_vnkq",
+   "fieldtype": "Link",
+   "label": "Size In",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_tkzg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "section_break_ajpa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qhrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size_ft",
+   "fieldtype": "Data",
+   "label": "Size FT"
+  },
+  {
+   "fieldname": "column_break_alvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_wjhu",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_eodf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_vwhu",
+   "fieldtype": "HTML",
+   "options": "\n<div style=\"font-size:20px; text-align:center;margin-top:25px;\">X</div>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jwtx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_lsyj",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_hnzv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_dahu",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_tchq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dscv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "size_in_ft",
+   "fieldtype": "Data",
+   "label": "Size In FT",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "size_cm",
+   "fieldtype": "Data",
+   "label": "Size CM",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "size_in_cm",
+   "fieldtype": "Data",
+   "label": "Size In CM",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "size_in_mm",
+   "fieldtype": "Data",
+   "label": "Size In MM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jisi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "area_yrd",
+   "fieldtype": "Float",
+   "label": "Area YRD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_gnad",
+   "fieldtype": "HTML",
+   "options": "<div style=\"font-size:20px; text-align:center;margin-top:35px;\">X</div>"
+  },
+  {
+   "fieldname": "column_break_hkyw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "float_tchx",
+   "fieldtype": "HTML",
+   "options": "<div style=\"height: 68px;\"></div>"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "float_ppne",
+   "fieldtype": "Float",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "area_in_sm",
+   "fieldtype": "Float",
+   "label": "Area In SM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jftw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cvod",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xzln",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "khap_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Khap Detail"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "label": "Length"
+  },
+  {
+   "default": "0",
+   "fieldname": "size_in_ft_dec",
+   "fieldtype": "Data",
+   "label": "Size In FT Dec",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "finishing_ft",
+   "fieldtype": "Data",
+   "label": "Finishing FT",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "finishing_cm",
+   "fieldtype": "Data",
+   "label": "Finishing CM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zrto",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Data",
+   "label": "Width"
+  },
+  {
+   "fieldname": "column_break_ixph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jiia",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-10 12:11:48.068721",
+ "modified_by": "Administrator",
+ "module": "galaxynext",
+ "name": "Size Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
