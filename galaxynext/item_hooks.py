@@ -1,5 +1,3 @@
-#------------------------------------------------------------------------------------------------
-
 import frappe
 
 def update_item_fields(doc, method):
@@ -81,3 +79,11 @@ def rename_item_after_save(doc, method):
         SET parent = %s
         WHERE parent = %s
     """, (new_code, old_name))
+
+
+
+
+
+
+
+

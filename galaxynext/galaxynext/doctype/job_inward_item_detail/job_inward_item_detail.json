@@ -2,7 +2,6 @@
  "actions": [],
  "allow_rename": 1,
  "creation": "2025-07-31 11:45:31.181597",
- "custom": 0,
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",

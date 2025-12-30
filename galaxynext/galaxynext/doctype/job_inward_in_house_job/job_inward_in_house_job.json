@@ -12,20 +12,21 @@
   "company",
   "customer_name",
   "address",
+  "gstin",
   "warehouse_name",
   "remark",
   "lr_no",
   "lr_date",
-  "order_ref_no",
   "column_break_twat",
   "jobinward_no",
   "inward_date",
+  "transfer_id",
+  "subcontracting_order",
   "master",
   "challan_no",
   "challan_date",
   "weaver_name",
   "vehicle_no",
-  "gstin",
   "stock_entry_ref",
   "items_section",
   "table_duni",
@@ -69,6 +70,12 @@
    "label": "Address"
   },
   {
+   "fetch_from": "customer_name.gstin",
+   "fieldname": "gstin",
+   "fieldtype": "Data",
+   "label": "GSTIN"
+  },
+  {
    "fieldname": "warehouse_name",
    "fieldtype": "Link",
    "label": "Warehouse Name",
@@ -82,17 +89,14 @@
   {
    "fieldname": "lr_no",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "LR No"
   },
   {
    "fieldname": "lr_date",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "LR Date"
-  },
-  {
-   "fieldname": "order_ref_no",
-   "fieldtype": "Data",
-   "label": "Order Ref No"
   },
   {
    "fieldname": "column_break_twat",
@@ -111,11 +115,24 @@
    "reqd": 1
   },
   {
+   "fieldname": "transfer_id",
+   "fieldtype": "Link",
+   "label": "Transfer Id",
+   "options": "Stock Entry"
+  },
+  {
+   "fieldname": "subcontracting_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dyeing Program Number",
+   "options": "Subcontracting Order"
+  },
+  {
    "fieldname": "master",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Master",
-   "options": "Cost Center",
-   "reqd": 1
+   "options": "Cost Center"
   },
   {
    "fieldname": "challan_no",
@@ -132,20 +149,14 @@
   {
    "fieldname": "weaver_name",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Weaver Name",
-   "options": "Supplier",
-   "reqd": 1
+   "options": "Supplier"
   },
   {
    "fieldname": "vehicle_no",
    "fieldtype": "Data",
    "label": "Vehicle No"
-  },
-  {
-   "fetch_from": "customer_name.gstin",
-   "fieldname": "gstin",
-   "fieldtype": "Data",
-   "label": "GSTIN"
   },
   {
    "fieldname": "stock_entry_ref",
@@ -189,7 +200,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-01 12:24:42.493486",
+ "modified": "2025-12-25 11:07:45.006666",
  "modified_by": "Administrator",
  "module": "galaxynext",
  "name": "Job Inward_In-House Job",

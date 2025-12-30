@@ -441,6 +441,7 @@ frappe.query_reports["Cross Tab Table"] = {
 						report.set_filter_value("company", default_company);
 						report.refresh();
 					} else {
+						
 						report.refresh();
 					}
 				},

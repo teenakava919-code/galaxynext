@@ -17,13 +17,16 @@ override_whitelisted_methods = {
 # }
 
 
+
+
+
 # Add this to your hooks.py file
 
-override_whitelisted_methods = {
-    "galaxynext.api.get_item_default_warehouse": "galaxynext.api.get_item_default_warehouse",
-    "galaxynext.api.get_available_subcontracting_orders": "galaxynext.api.get_available_subcontracting_orders",
-    "galaxynext.api.get_allowed_internal_customers": "galaxynext.api.get_allowed_internal_customers"
-}
+# override_whitelisted_methods = {
+#     "galaxynext.api.get_item_default_warehouse": "galaxynext.api.get_item_default_warehouse",
+#     "galaxynext.api.get_available_subcontracting_orders": "galaxynext.api.get_available_subcontracting_orders",
+#     "galaxynext.api.get_allowed_internal_customers": "galaxynext.api.get_allowed_internal_customers"
+# }
 
 
 # app_include_js = [
@@ -211,6 +214,22 @@ fixtures = [
             "prospect client script",
             "auto fill sale order",
             "sale order finish instruction"
+            "Get Detail Btn",
+            "click",
+            "Transfer Id Filter",
+            "Job Date",
+            "Job Inward companywise warehouse",
+            "unit",
+            "Quantity validation for job inward",
+            "Auto Ganareted",
+            "Warehouse Fetch in Job Inward Child Table",
+            "Job Inword",    #disable
+            "Make PO No Clickable",
+            "hide show",
+            "button event",
+            "fetch item parameter",
+            "Get Original Tab Table detail"
+
         ]]]
     },
     {
@@ -218,7 +237,12 @@ fixtures = [
 		"filters":[["name","in",[
 			"notification",
             "auto create work order",
-            "company event"
+            "company event",
+            "job Inward Auto Work Order Creation",
+            "Stock Effect",
+            "for stock",
+            "Cancel Stock Entry on Job Inward Cancel",
+            "itemcode_edit_tab",
 	   ]]]
 	}
 
