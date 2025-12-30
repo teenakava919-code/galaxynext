@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PP-{MM}-{YYYY}-{####}",
+ "creation": "2025-12-10 15:31:41.804988",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "param_name",
+  "param_value",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "param_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Param Name"
+  },
+  {
+   "fieldname": "param_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Param Value"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-10 15:40:43.862066",
+ "modified_by": "Administrator",
+ "module": "galaxynext",
+ "name": "parameter",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
